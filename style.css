@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b3b3b;
+    font-family: "Montserrat", sans-serif;
+    color: #e2e2e2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 15px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+label {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.error {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 5px;
+}
+
+@media (max-width: 535px) {
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .error {
+        font-size: 2.8vw;
+    }
+}
